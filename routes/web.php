@@ -23,3 +23,9 @@ Route::prefix('profile')->group(function () {
     Route::get('/widyaiswara', [App\Http\Controllers\Frontend\ProfileController::class, 'widyaiswara'])->name('widyaiswara');
     Route::get('/sarpras', [App\Http\Controllers\Frontend\ProfileController::class, 'sarpras'])->name('sarpras');
 });
+
+Route::prefix('media')->group(function () {
+    Route::get('/berita', [App\Http\Controllers\Frontend\MediaController::class, 'berita'])->name('berita');
+    Route::get('/publikasi', [App\Http\Controllers\Frontend\MediaController::class, 'publikasi'])->name('publikasi');
+    Route::get('/galeri', [App\Http\Controllers\Frontend\MediaController::class, 'galeri'])->name('galeri');
+});

@@ -135,18 +135,32 @@
                       <a class="menu-icon" href="/">SMART OFFICE<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                       <ul class="submenu-mainmenu">
                         <li>
-                          <a href="">SIDA</a>
+                          <a target="_blank" href="https://ppsdma-bpsdm.esdm.go.id/sida/">SIDA</a>
                         </li>
                         <li>
-                          <a href="">e-Jurnal</a>
+                          <a target="_blank" href="https://ppsdma-bpsdm.esdm.go.id/juwita/index.php/APARATUR">e-Jurnal</a>
                         </li>
                         <li>
-                          <a href="">SMILE</a>
+                          <a target="_blank" href="https://smile.esdm.go.id/">SMILE</a>
                         </li>
                       </ul>
                     </li>
 
-                    <li><a href="/"> Galeri</a></li>
+                    <li>
+                        <a class="menu-icon" href="/">Media<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="submenu-mainmenu">
+                          <li>
+                            <a href="">Berita</a>
+                          </li>
+                          <li>
+                            <a href="">Publikasi</a>
+                          </li>
+                          <li>
+                            <a href="">Galeri</a>
+                          </li>
+                        </ul>
+                    </li>
+
                     <li>
                       <a class="menu-icon" href="/">Dokumen<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                       <ul class="submenu-mainmenu">
