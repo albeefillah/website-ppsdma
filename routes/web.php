@@ -26,6 +26,9 @@ Route::prefix('profile')->group(function () {
 
 Route::prefix('media')->group(function () {
     Route::get('/berita', [App\Http\Controllers\Frontend\MediaController::class, 'berita'])->name('berita');
+    Route::get('/detail-berita', [App\Http\Controllers\Frontend\MediaController::class, 'detailBerita'])->name('detail-berita');
     Route::get('/publikasi', [App\Http\Controllers\Frontend\MediaController::class, 'publikasi'])->name('publikasi');
     Route::get('/galeri', [App\Http\Controllers\Frontend\MediaController::class, 'galeri'])->name('galeri');
 });
+
+Route::get('/kontak', [App\Http\Controllers\Frontend\KontakController::class, 'kontak'])->name('kontak');

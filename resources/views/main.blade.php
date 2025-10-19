@@ -150,13 +150,13 @@
                         <a class="menu-icon" href="/">Media<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="submenu-mainmenu">
                           <li>
-                            <a href="">Berita</a>
+                            <a href="{{ route('berita') }}">Berita</a>
                           </li>
-                          <li>
+                          {{-- <li>
                             <a href="">Publikasi</a>
-                          </li>
+                          </li> --}}
                           <li>
-                            <a href="">Galeri</a>
+                            <a href="{{ route('galeri') }}">Galeri</a>
                           </li>
                         </ul>
                     </li>
@@ -199,7 +199,7 @@
                         </li>
                       </ul>
                     </li>
-                    <li><a href="/">Kontak Kami</a></li>
+                    <li><a href="{{ route('kontak') }}">Kontak Kami</a></li>
                   </ul>
                 </nav>
               </div>

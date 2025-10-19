@@ -59,12 +59,12 @@
               <div class="col-lg-4 col-md-4">
                 <div class="blog-container-inner">
                   <div class="post-thumb">
-                    <a href="#"><img class="attachment-blog-list" src="frontend/img/berita/berita1.jpg" alt="" /></a>
-                    <a class="tb-publish" href="#"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                    <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita1.jpg" alt="" /></a>
+                    <a class="tb-publish" href="{{ route('detail-berita') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
-                      <a href="#"> Peringati HUT Pertambangan dan Energi ke-80, Kementerian ESDM Gelar Donor Darah</a>
+                      <a href="{{ route('detail-berita') }}"> Peringati HUT Pertambangan dan Energi ke-80, Kementerian ESDM Gelar Donor Darah</a>
                     </h3>
                     <div class="blog-meta">
                       <span class="published3"> <i class="fa fa-calendar" aria-hidden="true"></i> 19 September, 2025 </span>
@@ -77,7 +77,7 @@
                       </p>
                     </div>
                     <div class="readmore">
-                      <a href="#">Baca Selengkapnya</a>
+                      <a href="{{ route('detail-berita') }}">Baca Selengkapnya</a>
                     </div>
                   </div>
                 </div>
@@ -85,12 +85,12 @@
               <div class="col-lg-4 col-md-4">
                 <div class="blog-container-inner res-1">
                   <div class="post-thumb">
-                    <a href="#"><img class="attachment-blog-list" src="frontend/img/berita/berita2.jpg" alt="" /></a>
+                    <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita2.jpg" alt="" /></a>
                     <a class="tb-publish" href=""><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
-                      <a href="#">Tiga Pegawai PPSDM Aparatur Naik Jabatan Fungsional</a>
+                      <a href="{{ route('detail-berita') }}">Tiga Pegawai PPSDM Aparatur Naik Jabatan Fungsional</a>
                     </h3>
                     <div class="blog-meta">
                       <span class="published3"> <i class="fa fa-calendar" aria-hidden="true"></i> 17 September, 2025 </span>
@@ -103,7 +103,7 @@
                       </p>
                     </div>
                     <div class="readmore">
-                      <a href="#">Baca Selengkapnya</a>
+                      <a href="{{ route('detail-berita') }}">Baca Selengkapnya</a>
                     </div>
                   </div>
                 </div>
@@ -111,12 +111,12 @@
               <div class="col-lg-4 col-md-4">
                 <div class="blog-container-inner">
                   <div class="post-thumb">
-                    <a href="#"><img class="attachment-blog-list" src="frontend/img/berita/berita3.jpg" alt="" /></a>
+                    <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita3.jpg" alt="" /></a>
                     <a class="tb-publish" href=""><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
-                      <a href="#">Pendampingan Akreditasi Pelatihan Barang dan Jasa Oleh Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah di Lingkungan PPSDMA</a>
+                      <a href="{{ route('detail-berita') }}">Pendampingan Akreditasi Pelatihan Barang dan Jasa Oleh Lembaga Kebijakan Pengadaan Barang/Jasa Pemerintah di Lingkungan PPSDMA</a>
                     </h3>
                     <div class="blog-meta">
                       <span class="published3"> <i class="fa fa-calendar" aria-hidden="true"></i> 14 September, 2025 </span>
@@ -129,7 +129,7 @@
                       </p>
                     </div>
                     <div class="readmore">
-                      <a href="#">Baca Selengkapnya</a>
+                      <a href="{{ route('detail-berita') }}">Baca Selengkapnya</a>
                     </div>
                   </div>
                 </div>
@@ -329,7 +329,7 @@
                 <div class="section-title">
                   <h1>Layanan Publik</h1>
                   <div class="what-icon">
-                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
                   </div>
                 </div>
                 <p>PPSDM Aparatur menyediakan berbagai layanan publik untuk mendukung pengembangan kompetensi, informasi, dan kebutuhan masyarakat di bidang energi dan sumber daya mineral.</p>

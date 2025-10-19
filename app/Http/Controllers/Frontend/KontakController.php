@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class KontakController extends Controller
 {
-    //
+    public function kontak()
+    {
+        return view('frontend.kontak.index');
+    }
 }

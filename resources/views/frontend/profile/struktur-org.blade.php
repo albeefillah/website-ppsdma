@@ -8,7 +8,7 @@
                     <h2 class="page-title">Profile</h2>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li>Tugas dan Fungsi PPSDM Aparatur</li>
+                        <li>Struktur Organisasi</li>
                     </ul>
                 </div>
             </div>
