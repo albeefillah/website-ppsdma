@@ -165,7 +165,7 @@
                       <a class="menu-icon" href="/">Dokumen<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                       <ul class="submenu-mainmenu">
                         <li>
-                          <a href="">Standar Pelayanan PPSDMA</a>
+                          <a href="{{ route('standar-pelayanan') }}">Standar Pelayanan PPSDMA</a>
                         </li>
                         <li>
                           <a href="">SOP PPSDMA</a>

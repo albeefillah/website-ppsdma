@@ -4787,7 +4787,7 @@ span.tag {
     text-transform: uppercase;
 }
 .tab-accordion-area .accordion-head {
-    background: #303030 url("img/icon/accordion-up.png") no-repeat scroll right
+    background: #ffc107 url("img/icon/accordion-up.png") no-repeat scroll right
         center;
     color: #fff;
     display: block;
@@ -4802,7 +4802,7 @@ span.tag {
     width: 100%;
 }
 .tab-accordion-area .accordion-head.collapsed {
-    background: #303030 url("img/icon/accordion-down.png") no-repeat scroll
+    background: #2d5694c5 url("img/icon/accordion-down.png") no-repeat scroll
         right center;
 }
 .tab-accordion-area .accordion-head:hover,
@@ -4856,7 +4856,7 @@ span.tag {
     margin-right: 15px;
 }
 .elements-tab-area .tab-list li a {
-    background: #303030 none repeat scroll 0 0;
+    background: #666060 none repeat scroll 0 0;
     color: #fff;
     display: block;
     height: 42px;
@@ -4865,7 +4865,7 @@ span.tag {
     text-transform: uppercase;
 }
 .elements-tab-area .tab-list li a.active {
-    background: #ea000d none repeat scroll 0 0;
+    background: #ffc107 none repeat scroll 0 0;
 }
 .elements-video-one {
     margin-bottom: 30px;
