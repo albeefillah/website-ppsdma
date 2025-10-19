@@ -329,15 +329,15 @@
                   <div class="middle-mgn">
                     <div class="footer-top-left">
                       <p><i class="fa fa-whatsapp"></i></p>
-                      <a href="# ">0812-8282-2249 (Quick Response)</a>
+                      <a target="_blank" href="https://wa.me/6281282822249">0812-8282-2249 (Quick Response)</a>
                     </div>
                     <div class="footer-middle-right">
                       <p><i class="fa fa-phone"></i></p>
-                      <a href="# ">022 - 2502428 </a>
+                      <a href="tel:0222502428">022 - 2502428 </a>
                     </div>
                     <div class="footer-bottom-right">
                       <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
-                      <a href="# ">info.ppsdma@esdm.go.id </a>
+                      <a target="_blank" href="#">info.ppsdma@esdm.go.id </a>
                     </div>
                   </div>
                 </div>
