@@ -31,4 +31,18 @@ Route::prefix('media')->group(function () {
     Route::get('/galeri', [App\Http\Controllers\Frontend\MediaController::class, 'galeri'])->name('galeri');
 });
 
+Route::prefix('dokumen')->group(function () {
+    Route::get('/standar-pelayanan', [App\Http\Controllers\Frontend\DokumenController::class, 'standarPelayanan'])->name('standar-pelayanan');
+    Route::get('/sop', [App\Http\Controllers\Frontend\DokumenController::class, 'sop'])->name('sop');
+    Route::get('/lakip-laptah', [App\Http\Controllers\Frontend\DokumenController::class, 'lakipLaptah'])->name('lakip-laptah');
+    Route::get('/renstra-ppsdma', [App\Http\Controllers\Frontend\DokumenController::class, 'renstraPPSDMA'])->name('renstra-ppsdma');
+    Route::get('/renstra-bpsdm', [App\Http\Controllers\Frontend\DokumenController::class, 'renstraBPSDM'])->name('renstra-bpsdm');
+    Route::get('/ikm', [App\Http\Controllers\Frontend\DokumenController::class, 'ikm'])->name('ikm');
+    Route::get('/ipk', [App\Http\Controllers\Frontend\DokumenController::class, 'ipk'])->name('ipk');
+    Route::get('/zona-integritas', [App\Http\Controllers\Frontend\DokumenController::class, 'zonaIntegritas'])->name('zona-integritas');
+    Route::get('/peta-resiko', [App\Http\Controllers\Frontend\DokumenController::class, 'petaResiko'])->name('peta-resiko');
+    Route::get('/kebijakan-anti-penyuapan', [App\Http\Controllers\Frontend\DokumenController::class, 'kebijakanAntiPenyuapan'])->name('kebijakan-anti-penyuapan');
+    Route::get('/laporan-aktualisasi', [App\Http\Controllers\Frontend\DokumenController::class, 'laporanAktualisasi'])->name('laporan-aktualisasi');
+});
+
 Route::get('/kontak', [App\Http\Controllers\Frontend\KontakController::class, 'kontak'])->name('kontak');
