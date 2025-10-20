@@ -16,18 +16,55 @@
     </div>
 </section>
 
+
+<section class="gallery-area bg-gray pb-80 elements3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="what-top">
+              <div class="section-title">
+                <h1>Standar Pelayanan</h1>
+                <div class="what-icon">
+                  <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                </div>
+              </div>
+              <p class="up">PPSDM Aparatur berkomitmen memberikan layanan terbaik sesuai standar mutu dan profesionalisme.</p>
+            </div>
+        </div>
+      </div>
+      <div class="row gallery-mrg">
+        <div class="col-md-6">
+          <div class="single-banner">
+            <div class="">
+              <img src="{{ asset('frontend/img/dokumen/standar-pelayanan.png') }}" alt="" />
+            </div>
+            <div class="banner-text">
+              <h3>Standar Pelayanan PPSDM Aparatur</h3>
+              <a class="venobox" href="{{ asset('frontend/img/dokumen/standar-pelayanan.png') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="single-banner">
+            <div class="">
+              <img src="{{ asset('frontend/img/dokumen/standar-pelayanan2.png') }}" alt="" />
+            </div>
+            <div class="banner-text">
+              <h3>Standar Pelayanan PPSDM Aparatur</h3>
+              <a class="venobox" href="{{ asset('frontend/img/dokumen/standar-pelayanan2.png') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
 <div class="tab-accordion-area bg-off-white ptb-80">
     <div class="container">
-        <div class="row pb-5">
+        <div class="row">
             <div class="col-md-12 text-center">
-                <div class="what-top">
-                <div class="section-title">
-                    <h1>Standar Pelayanan</h1>
-                    <div class="what-icon">
-                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <p class="up">PPSDM Aparatur berkomitmen memberikan layanan terbaik sesuai standar mutu dan profesionalisme.</p>
+                <div class="contact-heading">
+                    <h3> <i class="fa fa-paperclip"></i> Lampiran</h3>
                 </div>
             </div>
         </div>
@@ -71,7 +108,7 @@
                                 <div class="collapse" id="accordion-4" data-bs-parent="#accordion2">
                                     <div class="accordion-body fix">
                                         <a href="{{ asset('frontend/file/dokumen/standar-pelayanan/penyertaan-diklat.pdf') }}" download>
-                                            <i class="fa fa-file-pdf-o"></i> Standar Pelayanan Penyertaan Duklat.pdf
+                                            <i class="fa fa-file-pdf-o"></i> Standar Pelayanan Penyertaan Diklat.pdf
                                           </a>
                                     </div>
                                 </div>
@@ -213,5 +250,4 @@
         </div>
     </div>
 </div>
-
 @endsection

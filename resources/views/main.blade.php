@@ -168,34 +168,34 @@
                           <a href="{{ route('standar-pelayanan') }}">Standar Pelayanan PPSDMA</a>
                         </li>
                         <li>
-                          <a href="">SOP PPSDMA</a>
+                          <a href="{{ route('sop') }}">SOP PPSDMA</a>
                         </li>
                         <li>
-                          <a href="">LAKIP & LAPTAH</a>
+                          <a href="{{ route('lakip-laptah') }}">LAKIP & LAPTAH</a>
                         </li>
                         <li>
-                          <a href="">Renstra PPSDMA</a>
+                          <a href="{{ route('renstra-ppsdma') }}">Renstra PPSDMA</a>
                         </li>
                         <li>
-                          <a href="">Renstra BPSDM ESDM</a>
+                          <a href="{{ route('renstra-bpsdm') }}">Renstra BPSDM ESDM</a>
                         </li>
                         <li>
-                          <a href="">Indeks Kepuasan Masyarakat (IKM)</a>
+                          <a href="{{ route('ikm') }}">Indeks Kepuasan Masyarakat (IKM)</a>
                         </li>
                         <li>
-                          <a href="">Indeks Pesepsi Korupsi (IPK)</a>
+                          <a href="{{ route('ipk') }}">Indeks Pesepsi Korupsi (IPK)</a>
                         </li>
                         <li>
-                          <a href="">Zona Integritas</a>
+                          <a href="{{ route('zona-integritas') }}">Zona Integritas</a>
                         </li>
                         <li>
-                          <a href="">Peta Resiko Organisasi</a>
+                          <a href="{{ route('peta-resiko') }}">Peta Resiko Organisasi</a>
                         </li>
                         <li>
-                          <a href="">Kebijakan Anti Penyuapan</a>
+                          <a href="{{ route('kebijakan-anti-penyuapan') }}">Kebijakan Anti Penyuapan</a>
                         </li>
                         <li>
-                          <a href="">Laporan Aktualisasi LATSAR & DIKPIM</a>
+                          <a href="{{ route('laporan-aktualisasi') }}">Laporan Aktualisasi LATSAR & DIKPIM</a>
                         </li>
                       </ul>
                     </li>
