@@ -174,10 +174,10 @@
                           <a href="{{ route('lakip-laptah') }}">LAKIP & LAPTAH</a>
                         </li>
                         <li>
-                          <a href="{{ route('renstra-ppsdma') }}">Renstra PPSDMA</a>
+                          <a href="{{ asset('frontend/file/dokumen/renstra-ppsdma/renstra-ppsdma.pdf') }}" target="_blank" >Renstra PPSDMA</a>
                         </li>
                         <li>
-                          <a href="{{ route('renstra-bpsdm') }}">Renstra BPSDM ESDM</a>
+                          <a href="{{ asset('frontend/file/dokumen/renstra-bpsdm/renstra-bpsdm.pdf') }} "  target="_blank" >Renstra BPSDM ESDM</a>
                         </li>
                         <li>
                           <a href="{{ route('ikm') }}">Indeks Kepuasan Masyarakat (IKM)</a>
@@ -189,10 +189,10 @@
                           <a href="{{ route('zona-integritas') }}">Zona Integritas</a>
                         </li>
                         <li>
-                          <a href="{{ route('peta-resiko') }}">Peta Resiko Organisasi</a>
+                          <a href="{{ asset('frontend/file/dokumen/peta-resiko/peta-resiko.pdf') }}"  target="_blank">Peta Resiko Organisasi</a>
                         </li>
                         <li>
-                          <a href="{{ route('kebijakan-anti-penyuapan') }}">Kebijakan Anti Penyuapan</a>
+                          <a href="{{ asset('frontend/file/dokumen/kebijakan-anti-penyuapan/kebijakan-anti-penyuapan.pdf') }}"  target="_blank">Kebijakan Anti Penyuapan</a>
                         </li>
                         <li>
                           <a href="{{ route('laporan-aktualisasi') }}">Laporan Aktualisasi LATSAR & DIKPIM</a>
