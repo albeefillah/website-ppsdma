@@ -249,7 +249,7 @@
             <div class="col-md-12 text-center">
               <div class="what-top">
                 <div class="section-title">
-                  <h1>Company Profile</h1>
+                  <h1>Profile PPSDM Aparatur</h1>
                   <div class="what-icon">
                     <i class="fa fa-bookmark" aria-hidden="true"></i>
                   </div>
