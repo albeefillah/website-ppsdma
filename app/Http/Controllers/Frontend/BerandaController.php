@@ -15,4 +15,8 @@ class BerandaController extends Controller
     {
         return view('frontend/beranda/seminar');
     }
+    public function tubel()
+    {
+        return view('frontend/beranda/tubel');
+    }
 }

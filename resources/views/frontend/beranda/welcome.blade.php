@@ -157,86 +157,61 @@
           </div>
           <div class="campaign-bottom pb-5">
             <div class="slider-active3 indicator-style owl-carousel">
-              <div class="upcoming-slider row g-0">
-                <div class="col-lg-6 p-0 up-right">
-                  <div class="upcoming-area">
-                    <div class="upcoming-img">
-                      <img src="frontend/img/event1.png" alt="" />
-                    </div>
-                    <div class="timer">
-                      <div class="upcoming-icon">
-                        <i class="fa fa-clock-o"></i>
+
+              <div class="upcoming-slider row">
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/1.png') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/1.png') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                       </div>
-                      <div data-countdown="2024/02/01"></div>
-                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6 p-0 up-left">
-                  <div class="upcoming-text bg-white">
-                    <h3>HUT ke 80 Hari Jadi Pertambangan dan Energi</h3>
-                    <p class="coming-one">
-                      Dalam rangka memperingati Hari Jadi Pertambangan dan Energi ke-80, Kementerian Energi dan Sumber Daya Mineral menyelenggarakan rangkaian kegiatan yang melibatkan seluruh pemangku kepentingan sektor energi dan
-                      pertambangan.
-                    </p>
-                    <p class="coming-two">
-                      Acara ini menjadi momentum refleksi sekaligus penguatan komitmen untuk terus membangun sektor energi dan pertambangan yang berkelanjutan, inovatif, serta memberikan manfaat nyata bagi kesejahteraan masyarakat dan
-                      kemajuan bangsa.
-                    </p>
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/2.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                      </div>
                   </div>
                 </div>
               </div>
-              <div class="upcoming-slider row g-0">
-                <div class="col-lg-6 p-0 up-right">
-                  <div class="upcoming-area">
-                    <div class="upcoming-img">
-                      <img src="frontend/img/banner/29.jpg" alt="" />
-                    </div>
-                    <div class="timer">
-                      <div class="upcoming-icon">
-                        <i class="fa fa-clock-o"></i>
+
+              <div class="upcoming-slider row">
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                       </div>
-                      <div data-countdown="2024/02/01"></div>
-                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6 p-0 up-left">
-                  <div class="upcoming-text bg-white">
-                    <h3>Creating the party’s brand</h3>
-                    <p class="coming-one">Credibly provide access to go forward process improvements whereas premier models. Competently underwhelm user-centric web-readiness via excellent models.</p>
-                    <p class="coming-two">
-                      Rapidiously redefine enterprise-wide collaboration and idea-sharing after world-class e-services. Conveniently e-enable 24/365 web services via high standards in synergy. Progressively whiteboard world-class
-                      imperatives before world-class schemas. Continually pursue effective intellectual capital before excellent services. Continually maximize resource maximizing models vis-a-vis enterprise-wide quality vectors.
-                      Progressively evolve virtual systems.
-                    </p>
+                <div class="col-lg-3 col-md-4 pb-5">
+                  <div class="blog-container-inner">
+                      <div class="post-thumb">
+                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt=""></a>
+                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                      </div>
                   </div>
                 </div>
               </div>
-              <div class="upcoming-slider row g-0">
-                <div class="col-lg-6 p-0 up-right">
-                  <div class="upcoming-area">
-                    <div class="upcoming-img">
-                      <img src="frontend/img/banner/29.jpg" alt="" />
-                    </div>
-                    <div class="timer">
-                      <div class="upcoming-icon">
-                        <i class="fa fa-clock-o"></i>
-                      </div>
-                      <div data-countdown="2024/02/01"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 p-0 up-left">
-                  <div class="upcoming-text bg-white">
-                    <h3>Creating the party’s brand</h3>
-                    <p class="coming-one">Credibly provide access to go forward process improvements whereas premier models. Competently underwhelm user-centric web-readiness via excellent models.</p>
-                    <p class="coming-two">
-                      Rapidiously redefine enterprise-wide collaboration and idea-sharing after world-class e-services. Conveniently e-enable 24/365 web services via high standards in synergy. Progressively whiteboard world-class
-                      imperatives before world-class schemas. Continually pursue effective intellectual capital before excellent services. Continually maximize resource maximizing models vis-a-vis enterprise-wide quality vectors.
-                      Progressively evolve virtual systems.
-                    </p>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -356,7 +331,7 @@
               <div class="what-bottom">
                 <div class="btn-icon">
                   <div class="then-icon">
-                    <a href="">
+                    <a href="{{ route('tubel') }}">
                       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     </a>
                   </div>
@@ -371,7 +346,7 @@
               <div class="what-bottom">
                 <div class="btn-icon">
                   <div class="then-icon">
-                    <a href="#">
+                    <a href="/under">
                       <i class="fa fa-hotel" aria-hidden="true"></i>
                     </a>
                   </div>
