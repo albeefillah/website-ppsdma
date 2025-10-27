@@ -56,6 +56,25 @@
 
     <!-- Style customizer -->
     <link rel="stylesheet" href="{{ asset('frontend/css/color/color-1.css') }}" />
+    <style>
+      /* Sembunyikan elemen Google Translate tanpa mematikannya */
+    #google_translate_element {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        visibility: hidden;
+      }
+
+      .goog-logo-link,
+      .goog-te-gadget span,
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+      }
+      body {
+        top: 0px !important;
+      }
+
+    </style>
      @yield('css')   
     <!-- modernizr JS
 		============================================ -->
@@ -76,11 +95,17 @@
               </div>
               <div class="header-search floatright">
                 <div class="header-button floatright">
-                  <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-flag"></i> Bahasa</button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/">ID</a></li>
-                    <li><a class="dropdown-item" href="/">ENG</a></li>
-                  </ul>
+                  <div class="language-switch">
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-flag"></i> Bahasa</button>
+                    <ul class="dropdown-menu">
+                      <li><button onclick="setLanguage('id')" class="btn btn-sm btn-light border dropdown-item">
+                        🇮🇩 Indonesia
+                      </button></li>
+                      <li><button onclick="setLanguage('en')" class="btn btn-sm btn-light border dropdown-item">
+                        🇬🇧 English
+                      </button></li>
+                    </ul>
+                  </div>
                 </div>
 
                 <div id="search" class="search-top floatleft">
@@ -195,7 +220,10 @@
                           <a href="{{ asset('frontend/file/dokumen/kebijakan-anti-penyuapan/kebijakan-anti-penyuapan.pdf') }}"  target="_blank">Kebijakan Anti Penyuapan</a>
                         </li>
                         <li>
-                          <a href="{{ route('laporan-aktualisasi') }}">Laporan Aktualisasi LATSAR & DIKPIM</a>
+                          <a href="{{ route('laporan-aktualisasi') }}">Laporan Aktualisasi LATSAR CPNS</a>
+                        </li>
+                        <li>
+                          <a href="{{ route('laporan-implementasi') }}">Laporan Implementasi DIKPIM</a>
                         </li>
                       </ul>
                     </li>
@@ -380,6 +408,37 @@
       </div>
     </div>
 
+    
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'id',
+          includedLanguages: 'en,id',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+      
+      function setLanguage(lang) {
+        const interval = setInterval(() => {
+          const combo = document.querySelector('.goog-te-combo');
+          if (combo) {
+            combo.value = lang;
+            combo.dispatchEvent(new Event('change'));
+            clearInterval(interval);
+          }
+        }, 500);
+      }
+      
+      window.addEventListener('load', function() {
+        const savedLang = localStorage.getItem('selectedLang');
+        if (savedLang && savedLang !== 'id') {
+          setLanguage(savedLang);
+        }
+      });
+      </script>
+      
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
     @yield('js')
     <!-- jquery
 		============================================ -->
@@ -403,34 +462,7 @@
     <script src="{{ asset('frontend/js/plugins.js') }}"></script>
     <!-- google map api
 		============================================ -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_qDiT4MyM7IxaGPbQyLnMjVUsJck02N0"></script>
-    <script>
-      var myCenter = new google.maps.LatLng(30.249796, -97.754667);
-      function initialize() {
-        var mapProp = {
-          center: myCenter,
-          scrollwheel: false,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-        };
-        var map = new google.maps.Map(document.getElementById("hastech"), mapProp);
-        var marker = new google.maps.Marker({
-          position: myCenter,
-          animation: google.maps.Animation.BOUNCE,
-          icon: "img/map-marker.png",
-          map: map,
-        });
-        var styles = [
-          {
-            stylers: [{ hue: "#c5c5c5" }, { saturation: -100 }],
-          },
-        ];
-        map.setOptions({ styles: styles });
-
-        marker.setMap(map);
-      }
-      google.maps.event.addDomListener(window, "load", initialize);
-    </script>
+  
     <script type="text/javascript">
       // grab an element
       var myElement = document.querySelector(".intelligent-header");
@@ -442,5 +474,10 @@
     <!-- main JS
 		============================================ -->
     <script src="{{ asset('frontend/js/main.js') }}"></script>
+
+    <!-- Google Translate -->
+    <div id="google_translate_element"></div>
+
+    
   </body>
 </html>

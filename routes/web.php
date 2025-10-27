@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', [App\Http\Controllers\Frontend\BerandaController::class, 'index'])->name('welcome');
+Route::get('/seminar', [App\Http\Controllers\Frontend\BerandaController::class, 'seminar'])->name('seminar');
 
 Auth::routes();
 
@@ -43,6 +44,7 @@ Route::prefix('dokumen')->group(function () {
     Route::get('/peta-resiko', [App\Http\Controllers\Frontend\DokumenController::class, 'petaResiko'])->name('peta-resiko');
     Route::get('/kebijakan-anti-penyuapan', [App\Http\Controllers\Frontend\DokumenController::class, 'kebijakanAntiPenyuapan'])->name('kebijakan-anti-penyuapan');
     Route::get('/laporan-aktualisasi', [App\Http\Controllers\Frontend\DokumenController::class, 'laporanAktualisasi'])->name('laporan-aktualisasi');
+    Route::get('/laporan-implementasi', [App\Http\Controllers\Frontend\DokumenController::class, 'laporanImplementasi'])->name('laporan-implementasi');
 });
 
 Route::get('/kontak', [App\Http\Controllers\Frontend\KontakController::class, 'kontak'])->name('kontak');

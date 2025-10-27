@@ -11,4 +11,8 @@ class BerandaController extends Controller
     {
         return view('frontend/beranda/welcome');
     }
+    public function seminar()
+    {
+        return view('frontend/beranda/seminar');
+    }
 }

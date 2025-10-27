@@ -146,12 +146,12 @@
             <div class="col-md-12 text-center">
               <div class="what-top meet campaign">
                 <div class="section-title">
-                  <h1>Event Terdekat</h1>
+                  <h1>Informasi</h1>
                   <div class="what-icon">
-                    <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
                   </div>
                 </div>
-                <p class="up">Saksikan dan ikuti berbagai event menarik yang akan segera diadakan.</p>
+                <p class="up">Ikuti berbagai informasi menarik yang disediakan PPSDM Aparatur.</p>
               </div>
             </div>
           </div>
@@ -341,7 +341,7 @@
               <div class="what-bottom">
                 <div class="btn-icon">
                   <div class="then-icon">
-                    <a href="#">
+                    <a href="{{ route('seminar') }}">
                       <i class="fa fa-group" aria-hidden="true"></i>
                     </a>
                   </div>
@@ -356,7 +356,7 @@
               <div class="what-bottom">
                 <div class="btn-icon">
                   <div class="then-icon">
-                    <a href="#">
+                    <a href="">
                       <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     </a>
                   </div>
