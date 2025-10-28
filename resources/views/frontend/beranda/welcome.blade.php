@@ -60,7 +60,6 @@
                 <div class="blog-container-inner">
                   <div class="post-thumb">
                     <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita1.jpg" alt="" /></a>
-                    <a class="tb-publish" href="{{ route('detail-berita') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
@@ -86,7 +85,6 @@
                 <div class="blog-container-inner res-1">
                   <div class="post-thumb">
                     <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita2.jpg" alt="" /></a>
-                    <a class="tb-publish" href=""><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
@@ -112,7 +110,6 @@
                 <div class="blog-container-inner">
                   <div class="post-thumb">
                     <a href="{{ route('detail-berita') }}"><img class="attachment-blog-list" src="frontend/img/berita/berita3.jpg" alt="" /></a>
-                    <a class="tb-publish" href=""><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
                   </div>
                   <div class="visual-inner">
                     <h3 class="blog-title">
