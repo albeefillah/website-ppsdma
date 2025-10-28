@@ -136,8 +136,8 @@
         </div>
       </section>
 
-      <!-- Event Terdekat -->
-      <section class="campaign-area bg-gray ptb-50">
+      <!-- Informasi -->
+      <section class="campaign-area gallery-area bg-gray ptb-50">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -156,54 +156,98 @@
             <div class="slider-active3 indicator-style owl-carousel">
 
               <div class="upcoming-slider row">
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/1.png') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/1.png') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                <div class="row gallery-mrg">
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/1.png') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barjas 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/1.png') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/2.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                  <div class="col-md-3">
+                      <div class="single-banner res-3">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barjas Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barang dan Jasa Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barang dan Jasa Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
                 </div>
               </div>
 
               <div class="upcoming-slider row">
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                <div class="row gallery-mrg">
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/1.png') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barjas 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/1.png') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 pb-5">
-                  <div class="blog-container-inner">
-                      <div class="post-thumb">
-                          <a href="#"><img class="attachment-blog-list" src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt=""></a>
-                          <a class="tb-publish" download="" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                  <div class="col-md-3">
+                      <div class="single-banner res-3">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barjas Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/2.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barang dan Jasa Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/3.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="single-banner">
+                          <div class="">
+                              <img src="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" alt="">
+                          </div>
+                          <div class="banner-text">
+                              <h3>Pelatihan Barang dan Jasa Level 1</h3>
+                              <a class="venobox" href="{{ asset('frontend/img/beranda/informasi/4.jpg') }}" data-gall="myGallery"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </div>
                       </div>
                   </div>
                 </div>
