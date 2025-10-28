@@ -28,6 +28,11 @@ Route::prefix('profile')->group(function () {
     Route::get('/sarpras', [App\Http\Controllers\Frontend\ProfileController::class, 'sarpras'])->name('sarpras');
 });
 
+Route::prefix('layanan')->group(function () {
+    Route::get('/pendidikan', [App\Http\Controllers\Frontend\LayananController::class, 'pendidikan'])->name('pendidikan');
+    Route::get('/pelatihan', [App\Http\Controllers\Frontend\LayananController::class, 'pelatihan'])->name('pelatihan');
+});
+
 Route::prefix('media')->group(function () {
     Route::get('/berita', [App\Http\Controllers\Frontend\MediaController::class, 'berita'])->name('berita');
     Route::get('/detail-berita', [App\Http\Controllers\Frontend\MediaController::class, 'detailBerita'])->name('detail-berita');

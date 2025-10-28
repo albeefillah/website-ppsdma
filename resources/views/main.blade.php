@@ -149,10 +149,10 @@
                       <a class="menu-icon" href="/">Layanan<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                       <ul class="submenu-mainmenu">
                         <li>
-                          <a href="">Pendidikan</a>
+                          <a href="{{ route('pendidikan') }}">Pendidikan</a>
                         </li>
                         <li>
-                          <a href="">Pelatihan</a>
+                          <a href="{{ route('pelatihan') }}">Pelatihan</a>
                         </li>
                       </ul>
                     </li>
@@ -275,10 +275,10 @@
                         <a class="menu-icon" href="issues.html">Layanan<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="submenu-mainmenu">
                           <li>
-                            <a href="">Pendidikan</a>
+                            <a href="{{ route('pendidikan') }}">Pendidikan</a>
                           </li>
                           <li>
-                            <a href="">Pelatihan</a>
+                            <a href="{{ route('pelatihan') }}">Pelatihan</a>
                           </li>
                         </ul>
                       </li>
