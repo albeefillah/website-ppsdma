@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 pt-3">
+      <div class="col-md-12 pt-3" style="overflow: auto;">
         <h6>Jurusan dan Universitas yang ditawarkan (Magister dan Doctoral)</h6>
         <!-- Tabel Jurusan dan Universitas (Magister & Doctoral) -->
         <table class="table table-bordered table-striped">

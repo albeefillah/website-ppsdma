@@ -51,7 +51,7 @@
       </div>
 
       <div class="row gallery-mrg">
-        <div class="col-md-12">
+        <div class="col-md-12" style="overflow: auto;">
             <table id="dataTable" class="table table-bordered table-striped">
                 <thead>
                     <tr>

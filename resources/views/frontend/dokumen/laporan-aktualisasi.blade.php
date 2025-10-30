@@ -49,7 +49,7 @@
             </div>
         </form>
       </div>
-      <div class="col-md-12 pt-3">
+      <div class="col-md-12 pt-3" style="overflow: auto;">
         
         <table class="table table-bordered table-striped">
             <thead>
@@ -83,7 +83,7 @@
           </table>
       </div>
       <div class="row gallery-mrg">
-        <div class="col-md-12">
+        <div class="col-md-12" style="overflow: auto;">
             <table id="dataTable" class="table table-bordered table-striped">
                 <thead>
                     <tr>

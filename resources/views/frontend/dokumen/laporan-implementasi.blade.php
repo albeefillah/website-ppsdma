@@ -69,7 +69,7 @@
                 </div>
           </div>
       </div>
-      <div class="col-md-12 pt-3">
+      <div class="col-md-12 pt-3" style="overflow: auto;">
         
         <table class="table table-bordered table-striped">
             <thead>

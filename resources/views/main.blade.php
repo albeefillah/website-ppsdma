@@ -91,10 +91,10 @@
           <div class="row">
             <div class="col-md-12">
               <div class="logo floatleft">
-                <a href="index.html"> <img alt="" width="210" height="90" src="{{ asset('frontend/img/logo/logo.png') }}" /> </a>
+                <a href="/"> <img alt="" width="210" height="90" src="{{ asset('frontend/img/logo/logo.png') }}" /> </a>
               </div>
               <div class="header-search floatright">
-                <div class="header-button floatright">
+                {{-- <div class="header-button floatright">
                   <div class="language-switch">
                     <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-flag"></i> Bahasa</button>
                     <ul class="dropdown-menu">
@@ -106,7 +106,7 @@
                       </button></li>
                     </ul>
                   </div>
-                </div>
+                </div> --}}
 
                 <div id="search" class="search-top floatleft">
                   <input class="form-control input-lg" placeholder="Search" value="" name="search" type="text" />
@@ -211,9 +211,6 @@
                           <a href="{{ route('ipk') }}">Indeks Pesepsi Korupsi (IPK)</a>
                         </li>
                         <li>
-                          <a href="{{ route('zona-integritas') }}">Zona Integritas</a>
-                        </li>
-                        <li>
                           <a href="{{ asset('frontend/file/dokumen/peta-resiko/peta-resiko.pdf') }}"  target="_blank">Peta Resiko Organisasi</a>
                         </li>
                         <li>
@@ -251,28 +248,28 @@
                         <div class="mega-menu shortcode2">
                           <ul class="submenu-mainmenu">
                             <li>
-                              <a href="">Sejarah</a>
+                              <a href="{{ route('sejarah') }}">Sejarah</a>
                             </li>
                             <li>
-                              <a href="">Visi & Misi</a>
+                              <a href="{{ route('visi-misi') }}">Visi & Misi</a>
                             </li>
                             <li>
-                              <a href="">Tugas & Fungsi</a>
+                              <a href="{{ route('tugas-fungsi') }}">Tugas & Fungsi</a>
                             </li>
                             <li>
-                              <a href="">Struktur Organisasi</a>
+                              <a href="{{ route('struktur-org') }}">Struktur Organisasi</a>
                             </li>
                             <li>
-                              <a href="">Widyaiswara</a>
+                              <a href="{{ route('widyaiswara') }}">Widyaiswara</a>
                             </li>
                             <li>
-                              <a href="">Sarana dan Prasarana</a>
+                              <a href="{{ route('sarpras') }}">Sarana dan Prasarana</a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li>
-                        <a class="menu-icon" href="issues.html">Layanan<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a class="menu-icon" href="/">Layanan<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="submenu-mainmenu">
                           <li>
                             <a href="{{ route('pendidikan') }}">Pendidikan</a>
@@ -283,22 +280,74 @@
                         </ul>
                       </li>
                       <li>
-                        <a class="menu-icon" href="events.html">SMART OFFICE<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <a class="menu-icon" href="/">SMART OFFICE<i class="fa fa-angle-down" aria-hidden="true"></i></a>
                         <ul class="submenu-mainmenu">
                           <li>
-                            <a href="">SIDA</a>
+                            <a target="_blank" href="https://ppsdma-bpsdm.esdm.go.id/sida/">SIDA</a>
                           </li>
                           <li>
-                            <a href="">e-Jurnal</a>
+                            <a target="_blank" href="https://ppsdma-bpsdm.esdm.go.id/juwita/index.php/APARATUR">e-Jurnal</a>
                           </li>
                           <li>
-                            <a href="">SMILE</a>
+                            <a target="_blank" href="https://smile.esdm.go.id/">SMILE</a>
                           </li>
                         </ul>
                       </li>
-
-                      <li><a href="/"> Galeri</a></li>
-                      <li><a href="contact.html">Kontak Kami</a></li>
+  
+                      <li>
+                          <a class="menu-icon" href="/">Media<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                          <ul class="submenu-mainmenu">
+                            <li>
+                              <a href="{{ route('berita') }}">Berita</a>
+                            </li>
+                            {{-- <li>
+                              <a href="">Publikasi</a>
+                            </li> --}}
+                            <li>
+                              <a href="{{ route('galeri') }}">Galeri</a>
+                            </li>
+                          </ul>
+                      </li>
+  
+                      <li>
+                        <a class="menu-icon" href="/">Dokumen<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul class="submenu-mainmenu">
+                          <li>
+                            <a href="{{ route('standar-pelayanan') }}">Standar Pelayanan PPSDMA</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('sop') }}">SOP PPSDMA</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('lakip-laptah') }}">LAKIP & LAPTAH</a>
+                          </li>
+                          <li>
+                            <a href="{{ asset('frontend/file/dokumen/renstra-ppsdma/renstra-ppsdma.pdf') }}" target="_blank" >Renstra PPSDMA</a>
+                          </li>
+                          <li>
+                            <a href="{{ asset('frontend/file/dokumen/renstra-bpsdm/renstra-bpsdm.pdf') }} "  target="_blank" >Renstra BPSDM ESDM</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('ikm') }}">Indeks Kepuasan Masyarakat (IKM)</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('ipk') }}">Indeks Pesepsi Korupsi (IPK)</a>
+                          </li>
+                          <li>
+                            <a href="{{ asset('frontend/file/dokumen/peta-resiko/peta-resiko.pdf') }}"  target="_blank">Peta Resiko Organisasi</a>
+                          </li>
+                          <li>
+                            <a href="{{ asset('frontend/file/dokumen/kebijakan-anti-penyuapan/kebijakan-anti-penyuapan.pdf') }}"  target="_blank">Kebijakan Anti Penyuapan</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('laporan-aktualisasi') }}">Laporan Aktualisasi LATSAR CPNS</a>
+                          </li>
+                          <li>
+                            <a href="{{ route('laporan-implementasi') }}">Laporan Implementasi DIKPIM</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a href="{{ route('kontak') }}">Kontak Kami</a></li>
                     </ul>
                   </nav>
                 </div>
@@ -322,7 +371,7 @@
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="social-logo">
-                  <a href="index.html">
+                  <a href="/">
                     <img src="{{ asset('frontend/img/logo/logo.png') }}" alt="" />
                   </a>
                 </div>
