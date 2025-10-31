@@ -1,8 +1,5 @@
 @extends('main')
-@section('name')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.bootstrap5.css" />
-@endsection
+
 @section('content')
 <section class="breadcrumbs-area ptb-140 breadcumb-bg">
     <div class="container">
@@ -239,14 +236,4 @@
     </div>
 </section>
 
-@endsection
-@section('js')
-   
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.js"></script>
-    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.bootstrap5.js"></script>
-    <script>
-        new DataTable('#dataTable');
-    </script>
 @endsection

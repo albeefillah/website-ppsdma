@@ -143,7 +143,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="issues-bottom">
                                     <a href="#"><img alt="" src="{{ asset('frontend/img/berita/berita1.jpg') }}" ></a>
-                                    <h3><a href="#">World economy towards</a></h3>
+                                    <h3><a href="#">Lorem ipsum dolor sim amet</a></h3>
                                     <div class="blog-meta tnm">
                                         <span class="published3">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -159,7 +159,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="issues-bottom two-mrg mrg-none-sm">
                                     <a href="#"><img alt="" src="{{ asset('frontend/img/berita/berita3.jpg') }}" ></a>
-                                    <h3><a href="#">Video start your career</a></h3>
+                                    <h3><a href="#">Lorem ipsum dolor sim amet</a></h3>
                                     <div class="blog-meta tnm">
                                         <span class="published3">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -175,7 +175,7 @@
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="issues-bottom">
                                     <a href="#"><img alt="" src="{{ asset('frontend/img/berita/berita2.jpg') }}" ></a>
-                                    <h3><a href="#">Defense Spending Proposals</a></h3>
+                                    <h3><a href="#">Lorem ipsum dolor sim amet</a></h3>
                                     <div class="blog-meta tnm">
                                         <span class="published3">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -212,7 +212,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dolor sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -220,7 +220,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita2.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dolor sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -228,7 +228,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita3.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dolor sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -236,7 +236,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dolor sim amet </p>
                             </div>
                         </div>
                     </div>

@@ -130,7 +130,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dot color sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -138,7 +138,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dot color sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -146,7 +146,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dot color sim amet </p>
                             </div>
                         </div>
                         <div class="categori-list-one">
@@ -154,7 +154,7 @@
                                 <a href="#"><img src="{{ asset('frontend/img/berita/berita1.jpg') }}" alt=""></a>
                             </div>
                             <div class="post-details">
-                                <p>Major components of FY2015 budget </p>
+                                <p>Lorem ipsum dot color sim amet </p>
                             </div>
                         </div>
                     </div>
