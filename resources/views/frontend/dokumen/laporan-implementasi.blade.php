@@ -136,6 +136,7 @@
                         <td>1</td>
                         <td><a target="_blank" href="">Klik disini</a></td>
                     </tr>
+                    <tr>
                         <td>2</td>
                         <td>2019</td>
                         <td>PKP</td>
@@ -143,7 +144,7 @@
                         <td>2</td>
                         <td><a target="_blank" href="">Klik disini</a></td>
                     </tr>
-                    </tr>
+                    <tr>
                         <td>3</td>
                         <td>2019</td>
                         <td>PKA</td>
@@ -151,7 +152,7 @@
                         <td>-</td>
                         <td><a target="_blank" href="">Klik disini</a></td>
                     </tr>
-                    </tr>
+                    <tr>
                         <td>4</td>
                         <td>2022</td>
                         <td>PKA</td>
@@ -159,7 +160,7 @@
                         <td>-</td>
                         <td><a target="_blank" href="">Klik disini</a></td>
                     </tr>
-                    </tr>
+                    <tr>
                         <td>4</td>
                         <td>2025</td>
                         <td>PKA</td>
