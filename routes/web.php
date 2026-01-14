@@ -56,3 +56,5 @@ Route::prefix('dokumen')->group(function () {
 });
 
 Route::get('/kontak', [App\Http\Controllers\Frontend\KontakController::class, 'kontak'])->name('kontak');
+
+// Backend
