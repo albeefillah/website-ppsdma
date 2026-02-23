@@ -1,0 +1,29 @@
+<?php
+
+namespace App\Filament\Resources\Kontak\Kontaks\Schemas;
+
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Schema;
+
+class KontakInfolist
+{
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                TextEntry::make('Link_peta'),
+                TextEntry::make('email')
+                    ->label('Email address'),
+                TextEntry::make('whatsapp'),
+                TextEntry::make('facebook'),
+                TextEntry::make('instagram'),
+                TextEntry::make('no_telp'),
+                TextEntry::make('created_at')
+                    ->dateTime()
+                    ->placeholder('-'),
+                TextEntry::make('updated_at')
+                    ->dateTime()
+                    ->placeholder('-'),
+            ]);
+    }
+}

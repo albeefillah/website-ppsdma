@@ -11,7 +11,7 @@ Route::get('/', [App\Http\Controllers\Frontend\BerandaController::class, 'index'
 Auth::routes();
 
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/regist', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 // Frontend
