@@ -4,59 +4,40 @@
       <div class="header-space"></div>
     <div class="header-space"></div>
       <section class="slider-main-area">
-    <div class="main-slider an-si">
-        <div class="bend niceties preview-2">
-
-            {{-- ================= SLIDES ================= --}}
+        <div class="main-slider an-si">
+          <div class="bend niceties preview-2">
             <div id="ensign-nivoslider-2" class="slides">
-                @foreach($banners as $banner)
-                    <img 
-                        src="{{ asset('storage/' . $banner->image) }}"
-                        alt="{{ $banner->title ?? '' }}"
-                        title="#slider-direction-{{ $banner->id }}"
-                    />
-                @endforeach
+              <img src="frontend/img/slider/1.png" alt="" title="#slider-direction-1" />
+              <img src="frontend/img/slider/2.png" alt="" title="" />
+              <img src="frontend/img/slider/3.png" alt="" title="" />
+              <img src="frontend/img/slider/4.png" alt="" title="" />
             </div>
-
-            {{-- ================= DIRECTION CONTENT ================= --}}
-            @foreach($banners as $banner)
-                <div id="slider-direction-{{ $banner->id }}" 
-                     class="t-cn slider-direction Builder">
-                    <div class="container">
-                        <div class="slide-all">
-
-                            @if(!empty($banner->title))
-                            <div class="layer-1">
-                                <h3 class="title5">
-                                    {{ $banner->title }}
-                                </h3>
-                            </div>
-                            @endif
-
-                            @if(!empty($banner->subtitle))
-                            <div class="layer-2">
-                                <h1 class="title6">
-                                    {{ $banner->subtitle }}
-                                </h1>
-                            </div>
-                            @endif
-
-                            @if(!empty($banner->button_link))
-                            <div class="layer-3">
-                                <a class="min1" href="{{ $banner->button_link }}">
-                                    {{ $banner->button_text ?? 'Read More' }}
-                                </a>
-                            </div>
-                            @endif
-
-                        </div>
-                    </div>
+            <!-- direction 1 -->
+            <div id="slider-direction-1" class="t-cn slider-direction Builder">
+              <div class="container">
+                <div class="slide-all">
+                  <!-- layer 1 -->
+                  <!-- <div class="layer-1">
+                    <h3 class="title5">HEY! WE ARE miata</h3>
+                  </div> -->
+                  <!-- layer 2 -->
+                  <!-- <div class="layer-2">
+                    <h1 class="title6">HONESTY IDEOLOGY TO</h1>
+                  </div> -->
+                  <!-- layer 2 -->
+                  <!-- <div class="layer-2">
+                    <h1 class="title6">THE PEOPLE</h1>
+                  </div> -->
+                  <!-- layer 3 -->
+                  <!-- <div class="layer-3">
+                    <a class="min1" href="#">Read more</a>
+                  </div> -->
                 </div>
-            @endforeach
-
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       <!-- Berita Terkini -->
       <section class="campaign-area pb-80">
