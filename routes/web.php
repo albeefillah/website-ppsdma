@@ -8,11 +8,15 @@ Route::get('/under', function () {
 });
 
 
+
 Route::get('/', [App\Http\Controllers\Frontend\BerandaController::class, 'index'])->name('welcome');
 Route::get('/seminar', [App\Http\Controllers\Frontend\BerandaController::class, 'seminar'])->name('seminar');
 Route::get('/tubel', [App\Http\Controllers\Frontend\BerandaController::class, 'tubel'])->name('tubel');
 
 Auth::routes();
+// Route::get('/', function () {
+//     return view('auth/login');
+// });
 
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

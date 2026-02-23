@@ -10,18 +10,24 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title> @yield('title') </title>
         <!-- Fevicon -->
-        <link rel="shortcut icon" href="{{ asset('assets/images/esdm-icon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('backend/images/esdm-icon.ico') }}">
         <!-- Start CSS -->   
         @yield('style')
-        <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('assets/css/icons.css') }}" rel="stylesheet" type="text/css">
-        <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('backend/css/icons.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('backend/css/style.css') }}" rel="stylesheet" type="text/css">
         <style>
             .table-font{
         font-family: 'Gill Sans', sans-serif;
     }
 
         </style>
+
+            <!-- Chartist Chart CSS -->
+        <link rel="stylesheet" href="{{ asset ('backend/plugins/chartist-js/chartist.min.css')}}">
+
+        <!-- Datepicker CSS -->
+        <link href="{{ asset('backend/plugins/datepicker/datepicker.min.css') }}" rel="stylesheet" type="text/css">
         <!-- End CSS -->
     </head>
     <body class="xp-vertical xp-toggle-menu">
@@ -47,7 +53,7 @@
         <!-- Start XP Container -->
         <div id="xp-container">     
             <!-- Start XP Leftbar -->
-            @include('layouts.leftbar')
+            @include('backend.layouts.leftbar')
             <!-- End XP Leftbar -->
             <!-- Start XP Rightbar -->
             <div class="xp-rightbar">  
@@ -56,23 +62,23 @@
                     <!-- Start XP Row -->
                     <div class="row">
                         <!-- Start XP Col -->
-                        <div class="col-2 col-md-1 col-lg-1 order-2 order-md-1 align-self-center">
+                        <div class="col-2 col-md-1 col-lg-1 order-3 order-md-1 align-self-center">
                             <div class="xp-menubar">
                                 <a class="xp-menu-hamburger" href="javascript:void();">
-                                   <i class="icon-menu font-20 text-black"></i>
+                                   <i class="icon-menu font-20 text-white"></i>
                                  </a>
                              </div>
                              
                         </div> 
                         <!-- End XP Col -->
                         <!-- Start XP Col -->
-                        <div class="col-2 col-md-2 col-lg-2 order-2 order-md-1">
-                            <a href="{{ route('home') }}" class="xp-logo logo-center"><img src="/assets/images/logo-ppsdm-tr.png" width="80%" class="img-fluid" alt="logo"></a>
-                        
+                        <div class="col-8 col-md-10 col-lg-10 order-1 order-md-2 d-flex align-items-center justify-content-start">
+                            {{-- <a href="{{ route('home') }}" class="xp-logo logo-center"><img src="/backend/images/logo-ppsdm-tr.png" width="80%" class="img-fluid" alt="logo"></a> --}}
+                            <h6 style="margin: 2px;"><font color="white">Content Management System Website PPSDM Aparatur</font></h6>
                         </div> 
                         <!-- End XP Col -->
                         <!-- Start XP Col -->
-                        <div class="col-10 col-md-9 col-lg-9 order-1 order-md-2">
+                        <div class="col-2 col-md-1 col-lg-1 order-2 order-md-3">
                             <div class="xp-profilebar text-right">
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item">
@@ -80,7 +86,7 @@
                                     </li>
                                     <li class="list-inline-item mr-0">
                                         <div class="dropdown xp-userprofile">
-                                            <a class="dropdown-toggle" href="#" role="button" id="xp-userprofile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/assets/images/esdm-icon.ico" alt="user-profile" class="rounded-circle img-fluid"><span class="xp-user-live"></span></a>
+                                            <a class="dropdown-toggle" href="#" role="button" id="xp-userprofile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/backend/images/esdm-icon.ico" alt="user-profile" class="rounded-circle img-fluid"><span class="xp-user-live"></span></a>
                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="xp-userprofile">
                                                 <a class="dropdown-item py-3 text-black text-center font-16" href="#">Hallo, {{ Auth::user()->name ?? null }} !</a>
                                                 <a class="dropdown-item" href="#"><i class="icon-user text-primary mr-2"></i> Profile</a>
@@ -127,7 +133,7 @@
                 <!-- Start XP Footerbar -->
                 <div class="xp-footerbar">
                     <footer class="footer">
-                        <p class="mb-0">© 2023 Dashboard PPSDM Aparatur - All Rights Reserved.</p>
+                        <p class="mb-0">© 2026 Website PPSDM Aparatur - All Rights Reserved.</p>
                     </footer>
                 </div>
                 <!-- End XP Footerbar -->
@@ -136,16 +142,31 @@
         </div>
         <!-- End XP Container -->
         <!-- Start JS -->        
-        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('assets/js/modernizr.min.js') }}"></script>
-        <script src="{{ asset('assets/js/detect.js') }}"></script>
-        <script src="{{ asset('assets/js/jquery.slimscroll.js') }}"></script>
-        <script src="{{ asset('assets/js/sidebar-menu.js') }}"></script>
+        <script src="{{ asset('backend/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('backend/js/popper.min.js') }}"></script>
+        <script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('backend/js/modernizr.min.js') }}"></script>
+        <script src="{{ asset('backend/js/detect.js') }}"></script>
+        <script src="{{ asset('backend/js/jquery.slimscroll.js') }}"></script>
+        <script src="{{ asset('backend/js/sidebar-menu.js') }}"></script>
         @yield('script')
+
+          <!-- Chartist Chart JS -->
+        <script src="{{ asset('backend/plugins/chartist-js/chartist.min.js') }}"></script>
+        <script src="{{ asset('backend/plugins/chartist-js/chartist-plugin-tooltip.min.js') }}"></script>
+
+        <!-- To Do List JS -->
+        <script src="{{ asset('backend/js/init/to-do-list-init.js') }}"></script>
+
+        <!-- Datepicker JS -->
+        <script src="{{ asset('backend/plugins/datepicker/datepicker.min.js') }}"></script>
+        <script src="{{ asset('backend/plugins/datepicker/i18n/datepicker.en.js') }}"></script>
+
+        <!-- Dashboard JS -->
+        <script src="{{ asset('backend/js/init/dashborad.js') }}"></script>
+
         <!-- Main JS -->
-        <script src="{{ asset('assets/js/main.js') }}"></script>
+        <script src="{{ asset('backend/js/main.js') }}"></script>
         <!-- End JS -->
     </body>
 </html>    
