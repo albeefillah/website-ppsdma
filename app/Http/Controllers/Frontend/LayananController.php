@@ -7,5 +7,12 @@ use Illuminate\Http\Request;
 
 class LayananController extends Controller
 {
-    //
+    public function pendidikan()
+    {
+        return view('frontend.layanan.pendidikan');
+    }
+    public function pelatihan()
+    {
+        return view('frontend.layanan.pelatihan');
+    }
 }

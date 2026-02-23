@@ -51,4 +51,8 @@ class DokumenController extends Controller
     {
         return view('frontend.dokumen.laporan-aktualisasi');
     }
+    public function laporanImplementasi()
+    {
+        return view('frontend.dokumen.laporan-implementasi');
+    }
 }

@@ -1,0 +1,223 @@
+.cell {
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .r1 {
+    background-color: #cce5ff;
+}
+
+.r2 {
+    background-color: #a8cbec;
+}
+
+.r3 {
+    background-color: #67b8fa;
+}
+
+.r4 {
+    background-color: #7396e0;
+}
+
+.k1 {
+    background-color: hsl(303, 70%, 75%);
+}
+
+.k2 {
+    background-color: #f8b1c9;
+}
+
+.k3 {
+    background-color: #fa6eb4;
+}
+
+.k4 {
+    background-color: #b968c0;
+}
+
+.ld {
+    background-color: #40f058;
+}
+
+.sd {
+    background-color: #f7cb3c;
+}
+
+.obm {
+    background-color: #f0ed4d;
+}
+
+.fop,
+.fom,
+.fosr {
+    background-color: #faa21f;
+}
+
+.mbs {
+    background-color: #6188c2;
+}
+
+.gd {
+    background-color: #ffeeba;
+}
+
+.bq {
+    background-color: #f88d8d;
+} */
+
+/* .bq {
+    background-color: #e89696;
+} */
+.off {
+    background-color: #f2cccc;
+    color: #e02424;
+}
+
+.fosr {
+    background-color: #faa21f;
+}
+.obm,
+.lds,
+.fom {
+    background-color: #797fd3;
+}
+.scroll-table-wrapper {
+    flex: 1;
+    overflow: auto;
+    max-height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: max-content;
+    box-sizing: border-box;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    white-space: nowrap;
+    background-color: white;
+    background-clip: padding-box; /* untuk mencegah border tembus */
+    box-sizing: border-box;
+}
+
+/* Header freeze */
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #3674b5;
+    color: white;
+}
+
+/* Kolom Freeze: NO */
+.sticky-col.no-col {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+}
+
+/* Kolom Freeze: Nama CS */
+.sticky-col-2.name-col {
+    position: sticky;
+    left: 35px; /* harus sesuai total kolom sebelumnya */
+    z-index: 5;
+    background-color: white;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+}
+thead .sticky-col,
+thead .sticky-col-2 {
+    z-index: 20;
+    top: 0;
+}
+/* Tambahan opsional agar scroll lebih smooth */
+.scroll-table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+th.month-end,
+td.month-end {
+    border-right: 2px solid #000 !important;
+}
+.drag-scroll {
+    overflow-x: auto;
+    cursor: grab;
+}
+
+.drag-scroll:active {
+    cursor: grabbing;
+}
+
+th.date-hover:hover {
+    background-color: #565658 !important;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.shift-pagi {
+    color: #92915f !important;
+}
+
+.shift-siang {
+    color: #eac7c7 !important;
+}
+
+.shift-sore {
+    color: #edc6b1 !important;
+}
+
+.shift-malam {
+    color: #b7b7b7 !important;
+}
+
+.shift-off {
+    /* background-color: #f0f0f0 !important; */
+    color: #e63f3f;
+}
+#tabel-container:fullscreen {
+    background-color: white;
+    padding: 20px;
+    overflow: auto;
+}
+#fullscreen-container:fullscreen {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-outline-purple {
+    color: #4c7cf3;
+    border-color: #4c7cf3 !important;
+}
+
+.btn-outline-purple:hover {
+    background-color: #4c7cf3;
+    color: #fff !important;
+}
+.transition {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}

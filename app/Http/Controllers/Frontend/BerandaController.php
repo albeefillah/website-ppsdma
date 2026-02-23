@@ -18,4 +18,12 @@ class BerandaController extends Controller
             'banners'
             ));
     }
+    public function seminar()
+    {
+        return view('frontend/beranda/seminar');
+    }
+    public function tubel()
+    {
+        return view('frontend/beranda/tubel');
+    }
 }
