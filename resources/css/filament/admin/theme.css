@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+
+/* TEST VISUAL */
+.filament-icon-picker {
+    outline: 3px solid red !important;
+}
+
+/* BUTTON ICON */
+.filament-icon-picker button {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 0 !important;
+}
+
+/* SVG */
+.filament-icon-picker svg {
+    width: 16px !important;
+    height: 16px !important;
+}
