@@ -1,0 +1,24 @@
+/* CSS untuk memperbaiki tampilan Icon Picker */
+.fi-modal .fi-modal-window {
+    max-width: 90vw !important;
+    width: 90vw !important;
+}
+
+.filament-icon-picker-icon-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)) !important;
+    gap: 10px !important;
+    padding: 1rem !important;
+}
+
+.filament-icon-picker-icon-item {
+    padding: 12px !important;
+    border-radius: 8px !important;
+    border: 1px solid #e5e7eb !important;
+    transition: all 0.2s ease !important;
+}
+
+.filament-icon-picker-icon-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}

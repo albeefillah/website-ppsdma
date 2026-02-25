@@ -31,23 +31,33 @@
         });
 
         /* ===== Warning ===== */
-        $("body").on("click", "#xp-sa-warning", function() {      
+        $("body").on("click", "#xp-sa-warning", function(e) {   
+            e.preventDefault();
+    
+            const href = $(this).attr('href');  
             swal({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+                title: 'Apakah anda yakin?',
+                text: "Data ini akan dihapus!",
                 type: 'warning',
                 showCancelButton: true,
                 confirmButtonClass: 'btn btn-success',
                 cancelButtonClass: 'btn btn-danger m-l-10',
-                confirmButtonText: 'Yes, delete it!'
-            }).then(function () {
-                swal(
-                    'Deleted!',
-                    'Your data has been deleted.',
-                    'success'
-                    )
+                confirmButtonText: 'Ya, hapus!',
+                cancelButtonText: 'Tidak'
+            }).then((result) => {
+                if (result==true) {
+                    swal(
+                        'Terhapus!',
+                        'Data anda berhasil dihapus.',
+                        'success'
+                        )  
+                    document.location.href= href;
+                    
+                }
             })
         });
+
+     
 
         /* ===== Parameter ===== */
         $("body").on("click", "#xp-sa-params", function() {      

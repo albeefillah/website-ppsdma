@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#xp-edit-btn').Tabledit({
         columns: {
             identifier: [0, 'id'],                    
-            editable: [[1, 'name'], [2, 'position'], [3, 'email'], [4, 'phone']]
+            editable: [ [3, 'email'], [4, 'phone']]
         }
     });
     $('#xp-edit-click').Tabledit({

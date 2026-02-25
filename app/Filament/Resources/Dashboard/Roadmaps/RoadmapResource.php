@@ -1,0 +1,61 @@
+<?php
+
+namespace App\Filament\Resources\Dashboard\Roadmaps;
+
+use App\Filament\Resources\Dashboard\Roadmaps\Pages\CreateRoadmap;
+use App\Filament\Resources\Dashboard\Roadmaps\Pages\EditRoadmap;
+use App\Filament\Resources\Dashboard\Roadmaps\Pages\ListRoadmaps;
+use App\Filament\Resources\Dashboard\Roadmaps\Pages\ViewRoadmap;
+use App\Filament\Resources\Dashboard\Roadmaps\Schemas\RoadmapForm;
+use App\Filament\Resources\Dashboard\Roadmaps\Schemas\RoadmapInfolist;
+use App\Filament\Resources\Dashboard\Roadmaps\Tables\RoadmapsTable;
+use App\Models\Roadmap;
+use BackedEnum;
+use UnitEnum;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
+use Filament\Tables\Table;
+
+class RoadmapResource extends Resource
+{
+    protected static ?string $model = Roadmap::class;
+    protected static string|UnitEnum|null $navigationGroup = 'Dashboard';
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static ?string $navigationLabel = 'Roadmap';
+    protected static ?string $recordTitleAttribute = 'Roadmap';
+
+    public static function form(Schema $schema): Schema
+    {
+        return RoadmapForm::configure($schema);
+    }
+
+    public static function infolist(Schema $schema): Schema
+    {
+        return RoadmapInfolist::configure($schema);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return RoadmapsTable::configure($table);
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+            //
+        ];
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListRoadmaps::route('/'),
+            'create' => CreateRoadmap::route('/create'),
+            'view' => ViewRoadmap::route('/{record}'),
+            'edit' => EditRoadmap::route('/{record}/edit'),
+        ];
+    }
+
+    
+}

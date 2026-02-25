@@ -1,84 +1,74 @@
 <div class="xp-leftbar">
     <!-- Start XP Sidebar -->
-    <div class="xp-sidebar">
+    <div class="xp-sidebar" style="width: 100%;">
         <!-- Start XP Logobar -->
         <div class="xp-logobar text-center">
-            <a href="{{ route('home') }}" class="xp-logo"><img src="frontend/img/logo/logo.png" width="80%" class="img-fluid" alt="logo"></a>
+            <a href="{{ route('home') }}" class="xp-logo"><img src="/assets/images/logo-ppsdm-tr.png" width="80%" class="img-fluid" alt="logo"></a>
         </div>
         <!-- End XP Logobar -->
         <!-- Start XP Navigationbar -->
         <div class="xp-navigationbar">
             <ul class="xp-vertical-menu">
-                
-                <li>
-                    <a href="index.html">
+                <li class="{{ (request()->is('home*')) ? 'active' : '' }}">
+                    <a href="{{ route('home') }}">
                       <i class="icon-speedometer"></i><span>Dashboard</span>
+                  </a>
+                </li>
+                @if (auth()->check() && (auth()->user()->can('isKapus') || auth()->user()->can('isSuperadmin')))
+                    <li class="xp-vertical-header">Master Data</li>
+        
+                    <li class="{{ (request()->is('user*')) ? 'active' : '' }}">
+                        <a href="{{ route('user.index') }}">
+                        <i class="icon-user"></i><span>Data User</span>
+                    </a>
+                    </li>
+                @endif
+
+                @if (auth()->check() && auth()->user()->role->role !== 'CS')
+                    <li class="xp-vertical-header">Applications / Dashboard</li>
+
+                    <li class="{{ (request()->is('sppd/')) ? 'active' : '' }}">
+                        <a href="{{ route('sppd.index') }}">
+                            <i class="icon-book-open"></i><span>Perjadin</span>
+                        </a>
+                    </li>
+                    
+                    <li class="{{ (request()->is('profile-kepeg/')) ? 'active' : '' }}">
+                        <a href="{{ route('profile-kepeg.index') }}">
+                            <i class="icon-people"></i><span>Kepegawaian ESDM</span>
+                        </a>
+                    </li>
+                @endif
+
+                @if (auth()->check() && (auth()->user()->can('isKapus') || auth()->user()->can('isSuperadmin')))
+                <li class="{{ (request()->is('keuangan/')) ? 'active' : '' }}">
+                    <a href="{{ route('keuangan.index') }}">
+                        <i class="ti-money"></i><span>Keuangan</span>
                     </a>
                 </li>
-                <li class="xp-vertical-header">Master Data</li>
-                <li>
-                    <a href="index.html">
-                      <i class="icon-people"></i><span>Users</span>
+                <li class="{{ (request()->is('kurikulum/')) ? 'active' : '' }}">
+                    <a href="{{ route('kurikulum.index') }}">
+                        <i class="ti-layout-media-left"></i><span>Kurikulum</span>
                     </a>
-                </li>  
+                </li>
 
-                <li class="xp-vertical-header">Landing Page Control</li>
-                <li>
-                    <a href="javaScript:void();">
-                        <i class="icon-home"></i><span>Profile</span><i class="icon-arrow-right pull-right"></i>
-                    </a>
-                    <ul class="xp-vertical-submenu">
-                        <li><a href="/">Sejarah</a></li>
-                        <li><a href="/">Visi & Misi</a></li>
-                        <li><a href="/">Tugas & Fungsi</a></li>
-                        <li><a href="/">Struktur Organisasi</a></li>
-                        <li><a href="/">Widyaiswara</a></li>
-                        <li><a href="/">Sarana dan Prasarana</a></li>
-                    </ul>
-                </li>                                                                                                                                                                                                                                                                                                  
-                <li>
-                    <a href="javaScript:void();">
-                        <i class="icon-grid"></i><span>Layanan</span><i class="icon-arrow-right pull-right"></i>
-                    </a>
-                    <ul class="xp-vertical-submenu">
-                        <li><a href="/">Pendidikan</a></li>
-                        <li><a href="/">Pelatihan</a></li>
-                    </ul>
-                </li>                                                                                                                                                                                                                                                                                                    
-                <li>
-                    <a href="javaScript:void();">
-                        <i class="icon-bulb"></i><span>Smart Office</span><i class="icon-arrow-right pull-right"></i>
-                    </a>
-                    <ul class="xp-vertical-submenu">
-                        <li><a href="/">SIDA</a></li>
-                        <li><a href="/">E-Jurnal</a></li>
-                        <li><a href="/">SMiLE</a></li>
-                    </ul>
-                </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                <li>
-                    <a href="javaScript:void();">
-                        <i class="icon-picture"></i><span>Media</span><i class="icon-arrow-right pull-right"></i>
-                    </a>
-                    <ul class="xp-vertical-submenu">
-                        <li><a href="/">Berita</a></li>
-                        <li><a href="/">Galeri</a></li>
-                    </ul>
-                </li>                                                                                                                                                                                                                                                                                                     
-                <li>
-                    <a href="index.html">
-                      <i class="icon-docs"></i><span>Dokumen</span>
-                    </a>
-                </li>                                                                                                                                                                                                                                                                                                   
-                <li>
-                    <a href="index.html">
-                      <i class="icon-phone"></i><span>Kontak Kami</span>
-                    </a>
-                </li>   
+
+                @endif
                 
-                
-            
-                
-                
+                @if (auth()->check() && (auth()->user()->can('isKapus') || auth()->user()->can('isSuperadmin') || auth()->user()->can('isCS')))
+                    <li class="{{ (request()->is('os/')) ? 'active' : '' }}">
+                        <a href="javaScript:void();">
+                            <i class="mdi mdi-account-group"></i><span>Mnj. Outsourcing</span><i class="icon-arrow-right pull-right"></i>
+                        </a>
+                        <ul class="xp-vertical-submenu">                                
+                            <li><a href="{{ route('employee.index') }}">List Pegawai</a></li>         
+                            <li><a href="{{ route('jobs.index') }}">List Job</a></li>         
+                            <li><a href="{{ route('holiday.index') }}">List Holiday</a></li>         
+                            <li><a href="{{ route('os.index') }}">Monitoring Jadwal</a></li>         
+                            {{-- <li><a href="{{ route('monitoring.index') }}">Monitoring Jadwal</a></li>          --}}
+                        </ul>
+                    </li>
+                @endif
 
 
             </ul>
