@@ -4,23 +4,19 @@ s<?php
     use Illuminate\Database\Schema\Blueprint;
     use Illuminate\Support\Facades\Schema;
 
-    return new class extends Migration
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
     {
-        /**
-         * Run the migrations.
-         */
-        public function up(): void
-        {
-            Schema::create('pendidikan', function (Blueprint $table) {
-                $table->id();
-                $table->Text('Nama');
-                $table->Text('Universitas');
-                $table->Text('Jurusan');
-                $table->date('Tahun');
-                $table->Text('Kategori');
-                $table->timestamps();
-            });
-        }
+        Schema::create('pendidikan', function (Blueprint $table) {
+            $table->id();
+            $table->longText('deskripsi');
+            $table->timestamps();
+        });
+    }
 
         /**
          * Reverse the migrations.

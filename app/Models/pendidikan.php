@@ -8,6 +8,10 @@ class pendidikan extends Model
 {
     protected $table = 'pendidikan';
     protected $fillable = [
-        'deskripsi',
+        'nama',
+        'universitas',
+        'jurusan',
+        'tahun',
+        'kategori',
     ];
 }

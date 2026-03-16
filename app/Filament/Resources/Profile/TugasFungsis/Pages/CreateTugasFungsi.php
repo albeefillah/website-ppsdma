@@ -7,5 +7,11 @@ use Filament\Resources\Pages\CreateRecord;
 
 class CreateTugasFungsi extends CreateRecord
 {
+    
     protected static string $resource = TugasFungsiResource::class;
+
+    public function canCreateAnother(): bool
+    {
+        return false;
+    }
 }

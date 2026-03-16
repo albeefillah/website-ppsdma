@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class berita extends Model
 {
@@ -12,4 +13,13 @@ class berita extends Model
         'foto',
         'konten_berita',
     ];
+
+    public function getberitaUrl(): string
+{
+    if (!$this->foto) {
+        return asset('images/placeholder.png');
+    }
+
+    return Storage::url('public/' . $this->foto);
+}
 }

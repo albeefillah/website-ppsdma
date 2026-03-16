@@ -2,14 +2,15 @@
 
 namespace App\Filament\Resources\Media\Beritas\Tables;
 
+use Illuminate\Support\Str;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
-use Filament\Schemas\Components\Image;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
+use Filament\Actions\Action;
 
 class BeritasTable
 {
@@ -19,12 +20,21 @@ class BeritasTable
             ->columns([
                 TextColumn::make('judul_berita')
                     ->searchable()
-                    ->sortable(),
+                    ->sortable()
+                    ->wrap(),
                 ImageColumn::make('foto')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Foto Berita')
+                    ->placeholder('-')
+                    ->defaultImageUrl(fn ($record) => $record->getberitaUrl())
+                    ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                    ->width(80)
+                    ->height(80),
                 TextColumn::make('konten_berita')
-                    ->html()
-                    ->limit(50),
+                    ->formatStateUsing(fn ($state) => Str::limit(strip_tags($state), 100))
+                    ->wrap(),
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

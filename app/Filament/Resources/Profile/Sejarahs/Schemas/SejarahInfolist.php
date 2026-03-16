@@ -20,7 +20,13 @@ class SejarahInfolist
                 ->formatStateUsing(fn ($state) => \Carbon\Carbon::parse($state)->format('Y'))
                 ->placeholder('-'),
             ImageEntry::make('image')
-                ->placeholder('-'),
+                ->columnSpanFull()
+                ->defaultImageUrl(fn ($record) => $record->getSejarahUrl())
+                ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                ->width(100)
+                ->height(100),
             TextEntry::make('deskripsi')
                 ->label('Deskripsi')
                 ->placeholder('-'),

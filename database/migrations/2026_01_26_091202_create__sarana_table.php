@@ -14,8 +14,8 @@ return new class extends Migration
     {
         Schema::create('sarana', function (Blueprint $table) {
             $table->id();
-            $table->Text('sarana');
-            $table->string('foto');
+            $table->text('sarana');
+            $table->foreignId('cover_image_id')->nullable();
             $table->timestamps();
         });
     }

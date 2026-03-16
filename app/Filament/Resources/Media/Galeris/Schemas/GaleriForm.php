@@ -16,7 +16,15 @@ class GaleriForm
                     ->required()
                     ->columnSpanFull(),
                 TextInput::make('foto')
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull()
+                    ->image()
+                    ->disk('public')
+                    ->directory('galeris')
+                    ->visibility('public')
+                    ->placeholder('Upload galleri image')
+                    ,
+
             ]);
     }
 }

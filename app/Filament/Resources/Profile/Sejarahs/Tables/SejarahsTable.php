@@ -22,11 +22,22 @@ class SejarahsTable
             TextColumn::make('Tahun')
                 ->label('Tahun')
                 ->date(),
+                
             ImageColumn::make('image')
-                ->label('image'),
+                ->label('Gambar')
+                ->placeholder('-')
+                ->defaultImageUrl(fn ($record) => $record->getSejarahUrl())
+                ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                ->width(80)
+                ->height(80),
+                
             TextColumn::make('Deskripsi')
                 ->label('Deskripsi')
-                ->limit(20),
+                ->html()
+                ->limit(100)
+                ->wrap(),
             ])
             ->filters([
                 //

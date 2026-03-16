@@ -22,7 +22,12 @@ class SejarahForm
                         ->required(),
                 FileUpload::make('image')
                         ->label('Gambar')
-                        ->image(),
+                        ->image()
+                        ->columnSpanFull()
+                        ->disk('public')
+                        ->directory('sejarahs')
+                        ->visibility('public')
+                        ->placeholder('Upload gambar sejarah'),
                 RichEditor::make('Deskripsi')
                     ->columnSpanFull()
                     ->required(),

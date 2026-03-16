@@ -20,7 +20,15 @@ class BannersTable
         return $table
             ->columns([
                 ImageColumn::make('image')
-                    ->placeholder('-'),
+                    ->label('Banner')
+                    ->placeholder('-')
+                    ->defaultImageUrl(fn ($record) => $record->getimageUrl())
+                    ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                    ->width(400)
+                    ->height(400),
+
                 TextColumn::make('list')
                     ->numeric()
                     ->sortable(),

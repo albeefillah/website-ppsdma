@@ -11,14 +11,7 @@ class PendidikanInfolist
     {
         return $schema
             ->components([
-                TextEntry::make('deskripsi')
-                    ->columnSpanFull(),
-                TextEntry::make('created_at')
-                    ->dateTime()
-                    ->placeholder('-'),
-                TextEntry::make('updated_at')
-                    ->dateTime()
-                    ->placeholder('-'),
+               
             ]);
     }
 }

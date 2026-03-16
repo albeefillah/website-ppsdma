@@ -19,7 +19,15 @@ class GalerisTable
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('foto')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Foto Galeri')
+                    ->placeholder('-')
+                    ->defaultImageUrl(fn ($record) => $record->getGaleriUrl())
+                    ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                    ->width(400)
+                    ->height(400),
             ])
             ->filters([
                 //

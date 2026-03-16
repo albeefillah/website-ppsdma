@@ -20,10 +20,10 @@ use Filament\Tables\Table;
 class TugasFungsiResource extends Resource
 {
     protected static ?string $model = TugasFungsi::class;
-    protected static string|UnitEnum|null $navigationGroup = 'Profile';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'tugasFungsi';
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|UnitEnum|null $navigationGroup = 'Profile';
+    protected static ?string $recordTitleAttribute = 'no';
 
     public static function form(Schema $schema): Schema
     {
@@ -35,10 +35,10 @@ class TugasFungsiResource extends Resource
         return TugasFungsiInfolist::configure($schema);
     }
 
-    public static function table(Table $table): Table
+    /*public static function table(Table $table): Table
     {
         return TugasFungsisTable::configure($table);
-    }
+    }*/
 
     public static function getRelations(): array
     {
@@ -50,10 +50,11 @@ class TugasFungsiResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListTugasFungsis::route('/'),
+            
+            /*'index' => ListTugasFungsis::route('/'),
             'create' => CreateTugasFungsi::route('/create'),
             'view' => ViewTugasFungsi::route('/{record}'),
-            'edit' => EditTugasFungsi::route('/{record}/edit'),
+            'edit' => EditTugasFungsi::route('/{record}/edit'),*/
         ];
     }
 }

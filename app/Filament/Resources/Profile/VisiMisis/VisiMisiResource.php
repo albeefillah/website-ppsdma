@@ -35,10 +35,10 @@ class VisiMisiResource extends Resource
         return VisiMisiInfolist::configure($schema);
     }
 
-    public static function table(Table $table): Table
+    /*public static function table(Table $table): Table
     {
         return VisiMisisTable::configure($table);
-    }
+    }*/
 
     public static function getRelations(): array
     {
@@ -50,10 +50,10 @@ class VisiMisiResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => ListVisiMisis::route('/'),
+            /*'index' => ListVisiMisis::route('/'),
             'create' => CreateVisiMisi::route('/create'),
             'view' => ViewVisiMisi::route('/{record}'),
-            'edit' => EditVisiMisi::route('/{record}/edit'),
+            'edit' => EditVisiMisi::route('/{record}/edit'),*/
         ];
     }
 }

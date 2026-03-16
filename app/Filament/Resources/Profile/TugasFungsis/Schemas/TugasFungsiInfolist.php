@@ -12,6 +12,7 @@ class TugasFungsiInfolist
         return $schema
             ->components([
                 TextEntry::make('tugas')
+                    ->placeholder('-')
                     ->columnSpanFull(),
                 TextEntry::make('fungsi')
                     ->columnSpanFull(),

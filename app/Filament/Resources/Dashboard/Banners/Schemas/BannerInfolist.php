@@ -7,15 +7,24 @@ use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
 use Illuminate\Support\Facades\Storage;
+use Filament\Schemas\Components\Section;
 
 class BannerInfolist
 {
     public static function configure(Schema $schema): Schema
     {
         return $schema
-            ->components([
+            ->schema([
+                 Section::make('View Banner Details')
+                ->schema([
                 ImageEntry::make('image')
-                    ->columnSpanFull(),
+                    ->columnSpanFull()
+                     ->defaultImageUrl(fn ($record) => $record->getimageUrl())
+                    ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                    ->width(900)
+                    ->height(500),
                 TextEntry::make('list')
                     ->numeric(),
                 IconEntry::make('is_active')
@@ -26,6 +35,8 @@ class BannerInfolist
                 TextEntry::make('updated_at')
                     ->dateTime()
                     ->placeholder('-'),
+                 ])
+        ->columnSpanFull()
             ]);
     }
 }

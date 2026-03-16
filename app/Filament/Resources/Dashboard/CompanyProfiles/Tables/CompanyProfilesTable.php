@@ -8,6 +8,8 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\ViewColumn;
+
 
 class CompanyProfilesTable
 {
@@ -21,6 +23,7 @@ class CompanyProfilesTable
             ->label('Video')
             ->limit(30)
             ->url(fn ($record) => $record->video_url, true),
+            
             TextColumn::make('created_at')->dateTime(),
             ])
             ->filters([

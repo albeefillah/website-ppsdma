@@ -20,6 +20,8 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Wallacemartinss\FilamentIconPicker\FilamentIconPickerPlugin;
 use App\Filament\Auth\Login;
+use App\Filament\Pages\KelolaTugasFungsi;   
+
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -31,10 +33,30 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
+            ->renderHook(
+                            'panels::body.start',
+                            fn () => '
+                                <style>
+                                    .fi-simple-layout {
+                                        background-image: url(/images/bg-login.jpg);
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-attachment: fixed;
+                                    }
+                                    .fi-simple-main {
+                                        background-color: rgba(255, 255, 255, 0.7) !important;
+                                        backdrop-filter: blur(0px);
+                                        border-radius: 12px;
+                                    }
+                                </style>
+                            '
+                        )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
                 Dashboard::class,
+                KelolaTugasFungsi::class,
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
@@ -55,4 +77,6 @@ class AdminPanelProvider extends PanelProvider
                 Authenticate::class,
             ]);
     }
+
+    
 }

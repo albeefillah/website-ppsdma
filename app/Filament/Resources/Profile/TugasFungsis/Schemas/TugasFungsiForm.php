@@ -13,7 +13,7 @@ class TugasFungsiForm
         return $schema
             ->components([
                 Textarea::make('tugas')
-                    ->required()
+                    ->default(null)
                     ->columnSpanFull(),
                 RichEditor::make('fungsi')
                     ->required()

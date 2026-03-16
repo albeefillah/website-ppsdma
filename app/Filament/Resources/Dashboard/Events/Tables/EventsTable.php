@@ -19,6 +19,10 @@ class EventsTable
             ->columns([
             ImageColumn::make('poster')
                 ->label('Poster')
+                ->defaultImageUrl(fn ($record) => $record->getPosterUrl())
+                ->extraImgAttributes([
+                    'class' => 'rounded-xl shadow-md object-cover'
+                ])
                 ->height(80),
 
             TextColumn::make('title')

@@ -2,7 +2,6 @@
 @section('content')
       <!-- mobile-menu-area end -->
       <div class="header-space"></div>
-    <div class="header-space"></div>
       <section class="slider-main-area">
         <div class="main-slider an-si">
           <div class="bend niceties preview-2">

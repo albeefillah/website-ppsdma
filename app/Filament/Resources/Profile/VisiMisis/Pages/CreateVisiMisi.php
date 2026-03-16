@@ -8,4 +8,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateVisiMisi extends CreateRecord
 {
     protected static string $resource = VisiMisiResource::class;
+    public function canCreateAnother(): bool
+    {
+        return false;
+    }
 }

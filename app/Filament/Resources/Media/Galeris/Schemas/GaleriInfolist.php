@@ -4,6 +4,8 @@ namespace App\Filament\Resources\Media\Galeris\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Schema;
+use Filament\Infolists\Components\ImageEntry;
+use Filament\Schemas\Components\Section;
 
 class GaleriInfolist
 {
@@ -13,7 +15,14 @@ class GaleriInfolist
             ->components([
                 TextEntry::make('judul_galeri')
                     ->columnSpanFull(),
-                TextEntry::make('foto'),
+                ImageEntry::make('foto')    
+                    ->columnSpanFull()
+                    ->defaultImageUrl(fn ($record) => $record->getGaleriUrl())
+                    ->extraImgAttributes([
+                        'class' => 'rounded-xl shadow-md object-cover'
+                    ])
+                    ->width(900)
+                    ->height(500),
                 TextEntry::make('created_at')
                     ->dateTime()
                     ->placeholder('-'),

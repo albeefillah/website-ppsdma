@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('pelatihan', function (Blueprint $table) {
             $table->id();
-            $table->longText('deskripsi');
+            $table->string('banner');
+            $table->text('nama_pelatihan');
+            $table->text('tanggal_mulai');
+            $table->text('tanggal_selesai');
+            $table->text('lokasi');
+            $table->text('jumlah_peserta');
             $table->timestamps();
         });
     }
