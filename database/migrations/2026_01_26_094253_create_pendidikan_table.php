@@ -1,8 +1,8 @@
-s<?php
+<?php
 
-    use Illuminate\Database\Migrations\Migration;
-    use Illuminate\Database\Schema\Blueprint;
-    use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
@@ -13,16 +13,20 @@ return new class extends Migration
     {
         Schema::create('pendidikan', function (Blueprint $table) {
             $table->id();
-            $table->longText('deskripsi');
+            $table->text('Nama');
+            $table->text('Universitas');
+            $table->text('Jurusan');
+            $table->date('Tahun');
+            $table->text('Kategori');
             $table->timestamps();
         });
     }
 
-        /**
-         * Reverse the migrations.
-         */
-        public function down(): void
-        {
-            Schema::dropIfExists('pendidikan');
-        }
-    };
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('pendidikan');
+    }
+};
