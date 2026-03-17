@@ -23,8 +23,8 @@ class KontakResource extends Resource
 {
     protected static ?string $model = Kontak::class;
     protected static string|UnitEnum|null $navigationGroup = 'Kontak';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-phone';
+    protected static ?string $navigationLabel = 'Kontak';
     protected static ?string $recordTitleAttribute = 'kontak';
 
     public static function form(Schema $schema): Schema

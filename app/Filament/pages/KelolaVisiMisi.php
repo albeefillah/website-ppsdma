@@ -24,7 +24,7 @@ class KelolaVisiMisi extends Page implements HasForms
 
     protected static ?string $slug = 'profile/visi-misi';
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-light-bulb';
 
     protected static ?string $title = 'Visi Misi';
 

@@ -24,7 +24,7 @@ class KelolaTugasFungsi extends Page implements HasForms
 
     protected static ?string $slug = 'profile/tugas-fungsi';
 
-    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-document-text';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-clipboard-document';
 
     protected static ?string $title = 'Tugas Fungsi';
 

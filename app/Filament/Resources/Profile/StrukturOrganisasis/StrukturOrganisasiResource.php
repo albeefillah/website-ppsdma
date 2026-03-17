@@ -21,8 +21,8 @@ class StrukturOrganisasiResource extends Resource
 {
     protected static ?string $model = StrukturOrganisasi::class;
     protected static string|UnitEnum|null $navigationGroup = 'Profile';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-user-group';
+    protected static ?string $navigationLabel = 'Struktur Organisasi';
     protected static ?string $recordTitleAttribute = 'Struktur Organisasi';
 
     public static function form(Schema $schema): Schema

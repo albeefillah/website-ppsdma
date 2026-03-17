@@ -55,9 +55,10 @@ class AdminPanelProvider extends PanelProvider
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
-                Dashboard::class,
+                \App\Filament\Pages\Home::class,
                 KelolaTugasFungsi::class,
             ])
+            ->homeUrl(fn () => route('filament.admin.pages.home'))
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
             ->widgets([
                 AccountWidget::class,

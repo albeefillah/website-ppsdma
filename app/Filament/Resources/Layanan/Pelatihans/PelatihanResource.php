@@ -21,8 +21,8 @@ class PelatihanResource extends Resource
 {
     protected static ?string $model = Pelatihan::class;
     protected static string|UnitEnum|null $navigationGroup = 'Layanan';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-academic-cap';
+    protected static ?string $navigationLabel = 'Pelatihan';
     protected static ?string $recordTitleAttribute = 'Pelatihan';
 
     public static function form(Schema $schema): Schema

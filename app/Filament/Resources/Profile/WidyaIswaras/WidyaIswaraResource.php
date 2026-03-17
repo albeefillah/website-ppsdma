@@ -21,8 +21,8 @@ class WidyaIswaraResource extends Resource
 {
     protected static ?string $model = WidyaIswara::class;
     protected static string|UnitEnum|null $navigationGroup = 'Profile';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-user';
+    protected static ?string $navigationLabel = 'Widya Iswara';
     protected static ?string $recordTitleAttribute = 'widyaIswara';
 
     public static function form(Schema $schema): Schema

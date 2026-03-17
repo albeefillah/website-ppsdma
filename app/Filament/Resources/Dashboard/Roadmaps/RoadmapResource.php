@@ -21,7 +21,7 @@ class RoadmapResource extends Resource
 {
     protected static ?string $model = Roadmap::class;
     protected static string|UnitEnum|null $navigationGroup = 'Dashboard';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-map';
     protected static ?string $navigationLabel = 'Roadmap';
     protected static ?string $recordTitleAttribute = 'Roadmap';
 

@@ -21,7 +21,7 @@ class CompanyProfileResource extends Resource
 {
     protected static ?string $model = CompanyProfile::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-building-library';
     protected static string|UnitEnum|null $navigationGroup = 'Dashboard';
     protected static ?string $navigationLabel = 'Company Profile';
     protected static ?string $recordTitleAttribute = 'CompanyProfile';

@@ -21,8 +21,8 @@ class PendidikanResource extends Resource
 {
     protected static ?string $model = Pendidikan::class;
     protected static string|UnitEnum|null $navigationGroup = 'Layanan';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-book-open';
+    protected static ?string $navigationLabel = 'Pendidikan';
     protected static ?string $recordTitleAttribute = 'Pendidikan';
 
     public static function form(Schema $schema): Schema

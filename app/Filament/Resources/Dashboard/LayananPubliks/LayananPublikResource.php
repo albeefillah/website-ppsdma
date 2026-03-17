@@ -22,7 +22,7 @@ class LayananPublikResource extends Resource
 {
     protected static ?string $model = LayananPublik::class;
     protected static string|UnitEnum|null $navigationGroup = 'Dashboard';
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-bell-alert';
     protected static ?string $navigationLabel = 'Layanan Publik';
     protected static ?string $recordTitleAttribute = 'LayananPublik';
     protected function getFormSchema(): array
