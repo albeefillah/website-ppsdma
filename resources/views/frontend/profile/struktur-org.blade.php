@@ -35,7 +35,12 @@
         <div class="col-md-12">
           <div class="single-banner">
             <div class="text-center">
-              <img src="{{ asset('frontend/img/struktur-org/struktur-org.png') }}" alt="" />
+              {{-- <img src="{{ asset('frontend/  img/struktur-org/struktur-org.png') }}" alt="" /> --}}
+              @if ($strukturOrg)
+                  <img src="{{ asset('storage/' . $strukturOrg->foto) }}" alt="Struktur Organisasi">
+              @else
+                <p>Struktur Organisasi Belum Tersedia</p>
+              @endif
             </div>
             
           </div>

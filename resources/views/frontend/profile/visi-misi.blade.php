@@ -1,4 +1,11 @@
 @extends('main')
+@section('css')
+    <style>
+        .p-text p{
+            font-size: 15px;
+        }
+    </style>
+@endsection
 @section('content')
 <section class="breadcrumbs-area ptb-140 breadcumb-bg">
     <div class="container">
@@ -34,17 +41,19 @@
             {{-- <div class="row"> --}}
                 <div class="col-lg-12">
                     <div class="progress-bar-area">
-                        <div class="progress-bar-text">
+                        <div class="progress-bar-text p-text">
                             <h3>Visi</h3>
-                            <p style="font-size: 15px;">Menjadi lembaga terandal dalam mewujudkan ASN KESDM yang jujur, profesional, inovatif, melayani, dan berarti</p>
+                            {{-- <p style="font-size: 15px;">Menjadi lembaga terandal dalam mewujudkan ASN KESDM yang jujur, profesional, inovatif, melayani, dan berarti</p> --}}
+                            <p>{{ $visiMisi->visi }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="progress-bar-area">
-                        <div class="progress-bar-text">
+                        <div class="progress-bar-text p-text">
                             <h3>Misi</h3>
-                            <p style="font-size: 15px;"> Meningkatkan kompetensi ASN KESDM secara optimal dan berkelanjutan melalui pelatihan klasikal dan non-klasikal di bidang kepemimpinan, manajemen, dan administrasi demi mendorong kinerja organisasi.</p>
+                            {{-- <p style="font-size: 15px;"> Meningkatkan kompetensi ASN KESDM secara optimal dan berkelanjutan melalui pelatihan klasikal dan non-klasikal di bidang kepemimpinan, manajemen, dan administrasi demi mendorong kinerja organisasi.</p> --}}
+                            {!! $visiMisi->misi !!}
                         </div>
                     </div>
                 </div>
