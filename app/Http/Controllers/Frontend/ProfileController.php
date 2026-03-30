@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\strukturOrganisasi;
+use App\Models\tugasFungsi;
+use App\Models\visiMisi;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -13,15 +16,19 @@ class ProfileController extends Controller
     }
     public function visiMisi()
     {
-        return view('frontend.profile.visi-misi');
+        $visiMisi = visiMisi::first();
+
+        return view('frontend.profile.visi-misi', compact('visiMisi'));
     }
     public function tugasFungsi()
     {
-        return view('frontend.profile.tugas-fungsi');
+        $tugasFungsi = tugasFungsi::first();
+        return view('frontend.profile.tugas-fungsi', compact('tugasFungsi'));
     }
     public function strukturOrg()
     {
-        return view('frontend.profile.struktur-org');
+        $strukturOrg = strukturOrganisasi::latest()->first();
+        return view('frontend.profile.struktur-org', compact('strukturOrg'));
     }
     public function widyaiswara()
     {
